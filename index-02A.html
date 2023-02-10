@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('res/img/piermanuele-sberni-W88UsnaGuog-unsplash-1560.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>? days left</p>
+  </div>
+  <div class="bottomleft">
+    <!-- <p>Some text</p> -->
+    <p>Photo by <a href="https://unsplash.com/@piermanuele_sberni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Piermanuele Sberni</a> on <a href="https://unsplash.com/photos/W88UsnaGuog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  </div>
+</div>
+
+<script>
+console.log('Loaded Script');
+</script>
+
+</body>
+</html>
