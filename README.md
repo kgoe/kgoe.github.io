@@ -87,3 +87,15 @@
 - Mail Template
 
 - Kitchen Sink / W3.CSS Demo Template
+
+# Links
+
+- https://www.w3schools.com/w3css/w3css_templates.asp
+
+- https://www.w3schools.com/w3css/w3css_demo.asp
+
+- https://www.w3schools.com/w3css/w3css_examples.asp
+
+- https://www.w3schools.com/w3css/w3css_references.asp
+
+- https://www.w3schools.com/w3css/w3css_downloads.asp
