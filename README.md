@@ -99,3 +99,18 @@
 - https://www.w3schools.com/w3css/w3css_references.asp
 
 - https://www.w3schools.com/w3css/w3css_downloads.asp
+
+# Command List
+```bash
+npm
+npm help
+npm run
+
+npm test (package.json scripts test)
+
+npm run test
+npm run build
+
+npm run mocha
+npm run mocha -- src/mocha-test-01.js # mocha src/mocha-test-01.js
+```
