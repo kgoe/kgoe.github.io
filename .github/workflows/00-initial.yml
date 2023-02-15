@@ -24,5 +24,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
+          cache: 'npm' # or 'yarn' | 'pnpm'
+      - run: npm ci
       - run: npm run mocha -- ./src/mocha-test-01.js
