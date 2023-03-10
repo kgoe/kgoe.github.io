@@ -6,7 +6,7 @@ var assert = CHAI.assert;
 var CHEERIO = require('cheerio');
 var cheerio = CHEERIO;
 
-var rawHTML = fs.readFileSync('map.html');
+var rawHTML = fs.readFileSync('deploy/map_place.html');
 var $ = cheerio.load(rawHTML);
 
 describe('HTML Basic Elements', function () {
