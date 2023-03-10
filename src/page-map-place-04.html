@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kgoe.github.io</title>
+    <link href="res/css/style-03.css" rel="stylesheet" />
+</head>
+    
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+  <div id="mapContainer" class="middle">
+  </div>
+  <div class="bottomleft">
+    <!-- <p>Some text</p> -->
+    <p class="small">Photo by <a href="https://unsplash.com/@piermanuele_sberni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Piermanuele Sberni</a> on <a href="https://unsplash.com/photos/W88UsnaGuog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+  </div>
+</div>
+
+<script src="res/js/global-script-04.js"></script>
+<!-- <script src="res/js/page-script-map-04.js"></script> -->
+
+<script>
+function main(){
+    _amod.log('Loaded Script Main');
+
+    var element = document.getElementById('mapContainer');
+
+    var size = _amod.getPageSize();
+
+    var queryParams = {
+      key: 'AIzaSyAMlWlPy-A1OsoZmnCIT7BvU1HvtM052D4',
+      type: 'place',
+      q: 'Rizal+Park,Manila+PH',
+      center: '',
+      zoom: 16, // 0 to 21
+      maptype: 'roadmap', // roadmap, satellite
+      region: '', // ccTLD region code
+    };
+
+    var iframeSrc =
+    `
+    <iframe
+        width="${(size.w * 0.9).toString()}"
+        height="${(size.h * 0.9).toString()}"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/${queryParams.type}?key=${queryParams.key}&q=${queryParams.q}&zoom=${queryParams.zoom}&maptype=${queryParams.maptype}">
+    </iframe>
+    `;
+
+    element.innerHTML = iframeSrc;
+}
+
+if ( typeof _amod == 'object' ) {
+    main();
+}
+</script>
+
+</body>
+</html>

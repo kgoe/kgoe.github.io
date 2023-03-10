@@ -26,4 +26,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm' # or 'yarn' | 'pnpm'
       - run: npm ci
-      - run: npm run mocha -- ./src/mocha-test-01.js
+      - run: sh run_tests.sh
+      - run: npm run mocha -- ./src/mocha-test-04B.js
