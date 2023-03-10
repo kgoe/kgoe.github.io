@@ -17,10 +17,13 @@ describe('HTML Basic Elements', function () {
       assert.equal($('title').length === 1, true);
    });
 
-   it('script style elements check', function(){
+   it('style elements check', function(){
       assert.equal($('link').length === 1, true);
-      assert.equal($('script').length === 1, true);
    });
+
+   it('script elements check', function(){
+    assert.equal($('script').length === 2, true);
+ });
 });
 
 describe('HTML Specific Elements', function(){
