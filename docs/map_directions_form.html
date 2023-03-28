@@ -72,8 +72,8 @@ function main(inputTo, inputFrom, inputCountry, inputTransit='driving'){
 if ( typeof _amod == 'object' ) {
     const url = new URL(window.location.href);
     const searchParams = url.searchParams;
-    if ( searchParams.get('to') && searchParams('from') && searchParams.get('country') ) {
-        main(searchParams.get('to'), searchParams('from'), searchParams.get('country'));
+    if ( searchParams.get('to') && searchParams.get('from') && searchParams.get('country') ) {
+        main(searchParams.get('to'), searchParams.get('from'), searchParams.get('country'));
     }
 }
 </script>
