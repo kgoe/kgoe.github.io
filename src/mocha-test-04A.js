@@ -18,11 +18,11 @@ describe('HTML Basic Elements', function () {
    });
 
    it('style elements check', function(){
-      assert.equal($('link').length === 1, true);
+      assert.equal($('link').length === 2, true);
    });
 
    it('script elements check', function(){
-    assert.equal($('script').length === 2, true);
+    assert.equal($('script').length === 5, true);
  });
 });
 
