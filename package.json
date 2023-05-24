@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Error: no build specified\" && exit 1",
-    "mocha": "mocha"
+    "mocha": "mocha",
+    "linthtml": "linthtml "
   },
   "keywords": [],
   "author": "",
