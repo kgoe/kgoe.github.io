@@ -1,11 +1,5 @@
-# README
-
-- Github Page Templates Readme
-
-- kgoe.github.io
-
-
 # Command List
+
 ```bash
 npm
 npm help
