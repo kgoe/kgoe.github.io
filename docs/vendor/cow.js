@@ -1,4 +1,27 @@
 // cow.js
+
+window.cow_json = {
+    "property1": "value1",
+    "property2": "value2",
+    "object1": {
+        "field1": "value1",
+        "field2": 2,
+        "field4": true
+    },
+    "object2": [
+    {
+        "field1": "value1",
+        "field2": 2,
+        "field3": true
+    },
+    {
+        "field1": "value1",
+        "field2": 2,
+        "field3": true,
+        "field4": false,
+    }],
+};
+
 (function(exports) {
     "use strict";
     function Cow(name) {
